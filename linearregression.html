@@ -7517,9 +7517,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>1 Practical Lab 1: Univariate Linear Regression on California Housing Prices
-Author: Shiru Course: Machine Learning Foundations
-Repository: <a href="https://github.com/SHIRU235/LinearRegression.git">https://github.com/SHIRU235/LinearRegression.git</a></p>
+<p>Practical Lab 1: Univariate Linear Regression on California Housing Prices</p>
 </div>
 </div>
 </div>
@@ -7530,7 +7528,7 @@ Repository: <a href="https://github.com/SHIRU235/LinearRegression.git">https://g
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>2 Problem Statement
+<p>1 Problem Statement
 The goal of this lab is to train three univariate linear regression models to predict the median house value in California based on one independent variable at a time: median income, population, and number of households.</p>
 </div>
 </div>
@@ -7629,6 +7627,17 @@ Note: you may need to restart the kernel to use updated packages.
 </div>
 </div>
 </div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=175b3a01">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p><a href="https://raw.githubusercontent.com/ageron/handson-ml/master/datasets/housing/housing.csv">California Housing Dataset</a></p>
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=52d27514">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -7637,7 +7646,7 @@ Note: you may need to restart the kernel to use updated packages.
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1">##3 Getting the data</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#2 Getting the data</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">seaborn</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sns</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
@@ -7711,7 +7720,7 @@ Note: you may need to restart the kernel to use updated packages.
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#4EDA (Exploratory Data Analysis)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#3 EDA (Exploratory Data Analysis)</span>
 <span class="c1"># Summary Statistics</span>
 <span class="n">df</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
 
@@ -7772,10 +7781,10 @@ Note: you may need to restart the kernel to use updated packages.
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># 5. Linear Regression Models</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># 4. Linear Regression Models</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.linear_model</span><span class="w"> </span><span class="kn">import</span> <span class="n">LinearRegression</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.metrics</span><span class="w"> </span><span class="kn">import</span> <span class="n">mean_squared_error</span><span class="p">,</span> <span class="n">mean_absolute_error</span>
 
@@ -7824,10 +7833,10 @@ Note: you may need to restart the kernel to use updated packages.
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># 6. Regression Table</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Regression Table</span>
 <span class="n">table</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">results</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="p">[</span><span class="s2">"Intercept"</span><span class="p">,</span> <span class="s2">"Slope"</span><span class="p">,</span> <span class="s2">"MSE"</span><span class="p">,</span> <span class="s2">"MAE"</span><span class="p">])</span><span class="o">.</span><span class="n">T</span>
 <span class="n">table</span>
 </pre></div>
@@ -7840,7 +7849,7 @@ Note: you may need to restart the kernel to use updated packages.
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[8]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[ ]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
